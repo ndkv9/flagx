@@ -48,7 +48,7 @@ const App = () => {
   return (
     <div id='page-container'>
       <header>
-        <h2>FlagX</h2>
+        <h2>FlagX Now</h2>
         <h2>Score: {score}</h2>
         <h2>Guesses: {guesses}</h2>
       </header>
