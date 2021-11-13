@@ -55,7 +55,7 @@ const App = () => {
 
       <main>
         {!isEnded && isStarted && (
-          <div>
+          <React.Fragment>
             <div className='noti-container'>{isCorrect ? null : <Noti />}</div>
 
             {selectedCountry && (
@@ -70,7 +70,7 @@ const App = () => {
                   key={country.capital}
                 />
               ))}
-          </div>
+          </React.Fragment>
         )}
 
         {!isStarted && <LandingPage setIsStarted={setIsStarted} />}
