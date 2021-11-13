@@ -1,0 +1,23 @@
+name: Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  building_pipeline:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '16.x'
+      - name: install yarn
+        run: npm -g install yarn
+      - name: install dependencies
+        run: yarn
+      - name: lint
+        run: yarn run lint
