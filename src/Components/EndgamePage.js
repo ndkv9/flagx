@@ -14,7 +14,7 @@ const EndgamePage = ({
     setGuesses(3)
   }
   return (
-    <div>
+    <div className='end-game'>
       <h2>GAME OVER!</h2>
       <h3>YOUR SCORE IS {score}</h3>
       <button onClick={handleRetry}>RETRY</button>

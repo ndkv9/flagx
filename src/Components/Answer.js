@@ -3,7 +3,9 @@ import PropTypes from 'prop-types'
 
 const Answer = ({ country, answer }) => {
   return (
-    <p onClick={() => answer(country.name.common)}>{country.name.common}</p>
+    <p className='answer' onClick={() => answer(country.name.common)}>
+      {country.name.common}
+    </p>
   )
 }
 

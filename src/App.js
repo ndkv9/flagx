@@ -46,11 +46,16 @@ const App = () => {
   }
 
   return (
-    <div id='page-container'>
+    <div className='App'>
       <header>
-        <h2>FlagX Now</h2>
-        <h2>Score: {score}</h2>
-        <h2>Guesses: {guesses}</h2>
+        <div className='title'>
+          {' '}
+          <h2>FlagX</h2>
+        </div>
+        <div className='info'>
+          <h2>Score: {score}</h2>
+          <h2>Guesses: {guesses}</h2>
+        </div>
       </header>
 
       <main>

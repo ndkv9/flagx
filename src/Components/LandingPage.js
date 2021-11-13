@@ -5,7 +5,7 @@ const LandingPage = ({ setIsStarted }) => {
     setIsStarted(prev => !prev)
   }
   return (
-    <div>
+    <div className='landing-page'>
       <h2>WELCOME!</h2>
       <button onClick={handleClick}>START</button>
     </div>
