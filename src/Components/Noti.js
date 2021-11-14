@@ -1,5 +1,4 @@
 import React from 'react'
-import './Noti.css'
 
 const Noti = () => {
   return (
