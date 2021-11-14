@@ -9,7 +9,7 @@ describe('Noti', () => {
   })
 
   it('can display properly content', () => {
-    const title = screen.getByText(/wrong answer!/i)
+    const title = screen.getByText(/Hmm..that is not the answer!/i)
     expect(title).toBeInTheDocument()
   })
 })
