@@ -3,15 +3,7 @@ import PropTypes from 'prop-types'
 import './CountryFlag.css'
 
 const CountryFlag = ({ imgSrc }) => {
-  return (
-    <img
-      id='flag'
-      src={imgSrc}
-      alt='displayed nation flag'
-      height='200'
-      width='300'
-    />
-  )
+  return <img className='flag' src={imgSrc} alt='displayed nation flag' />
 }
 
 CountryFlag.propTypes = {

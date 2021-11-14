@@ -66,15 +66,16 @@ const App = () => {
             {selectedCountry && (
               <CountryFlag imgSrc={selectedCountry.flags.svg} />
             )}
-
-            {countriesList &&
-              countriesList.map(country => (
-                <Answer
-                  country={country}
-                  answer={handleAnswer}
-                  key={country.capital}
-                />
-              ))}
+            <div className='answers'>
+              {countriesList &&
+                countriesList.map(country => (
+                  <Answer
+                    country={country}
+                    answer={handleAnswer}
+                    key={country.capital}
+                  />
+                ))}
+            </div>
           </React.Fragment>
         )}
 
