@@ -3,7 +3,7 @@ import React from 'react'
 const Noti = () => {
   return (
     <div className='noti'>
-      <p>WRONG ANSWER!</p>
+      <p>Hmm..that is not the answer!</p>
     </div>
   )
 }
