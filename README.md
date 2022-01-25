@@ -35,6 +35,7 @@
 - [React]()
 - [HTML]()
 - [CSS]()
+- REST countries API
 
 <!-- GETTING STARTED -->
 
